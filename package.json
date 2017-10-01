@@ -1,0 +1,50 @@
+{
+  "name": "tecdoc-client",
+  "version": "0.0.1",
+  "description": "Nodejs TecDoc client",
+  "keywords": [
+    "Node TecDoc",
+    "Node TecDoc client",
+    "Node TecDoc client API",
+    "Nodejs TecDoc",
+    "Nodejs TecDoc client",
+    "Nodejs TecDoc client API"
+  ],
+  "author": {
+    "name": "Stanislav WEB",
+    "email": "stanisov@gmail.com",
+    "url": "https://github.com/stanislav-web"
+  },
+  "homepage": "https://github.com/stanislav-web/node-tecdoc-client",
+  "bugs": {
+    "url": "https://github.com/stanislav-web/node-tecdoc-client/issues",
+    "email": "stanisov@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stanislav-web/node-tecdoc-client.git"
+  },
+  "scripts": {
+    "pretest": "eslint --fix index.js lib/** ./test",
+    "test": "mocha -r should --reporter mochawesome ./test",
+    "prepublish": "mocha -r should ./test"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.3.x",
+    "npm": ">=5.x"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "mocha": "^3.5.3",
+    "mochawesome": "^2.3.1",
+    "should": "^13.1.0"
+  }
+}
