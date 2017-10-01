@@ -4,8 +4,5 @@ npm-debug.log
 # Dependency directories
 node_modules/
 mochawesome-report/
-mochawesome-report/
-# dotenv environment variables file
-.env
 # User-specific stuff:
 .idea/

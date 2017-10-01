@@ -1,6 +1,6 @@
 {
   "name": "tecdoc-client",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Nodejs TecDoc client",
   "keywords": [
     "Node TecDoc",
@@ -26,6 +26,7 @@
     "url": "https://github.com/stanislav-web/node-tecdoc-client.git"
   },
   "scripts": {
+    "dev"    : "set NODE_ENV=dev node index.js",
     "pretest": "eslint --fix index.js lib/** ./test",
     "test": "mocha -r should --reporter mochawesome ./test",
     "prepublish": "mocha -r should ./test"
