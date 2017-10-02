@@ -18,6 +18,10 @@ describe('TecDoc Client test', () => {
         });
     });
 
+    beforeEach((done) => { // prevent timeout responses
+        setTimeout(done, 5000);
+    });
+
     it('should return version info', (done) => {
 
         client.getPegasusVersionInfo().then((response) => {
