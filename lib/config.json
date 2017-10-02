@@ -1,6 +1,9 @@
 {
   "service_url" : "http://webservicepilot.tecdoc.net/pegasus-3-0/services/TecdocToCatDLB.jsonEndpoint",
-  "provider" : "",
+  "method"   : "POST",
+  "provider" : "3423423",
   "articleCountry" : "DE",
-  "lang" : "en"
+  "lang" : "en",
+  "content-type" : "application/json;charset=UTF-8"
 }
+

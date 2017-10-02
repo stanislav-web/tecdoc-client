@@ -1,38 +1,72 @@
 const TecDocClient = require('../lib/client.js');
-const assert = require('chai').assert;
+const chai = require('chai');
+const assert = chai.assert;
 
-describe('TecDoc Client test', function () {
+describe('TecDoc Client test', () => {
 
+    /**
+     *
+     * @type {Client}
+     */
     let client;
 
-    it('should be as init object', function () {
-        client = new TecDocClient({'provider': 1236676473629});
-        assert.typeOf(client, 'object');
-        client.should.be.have.property('_config');
-    });
-
-    it('should be as config object with properties', function () {
-        let config = client.getConfig();
-        assert.typeOf(config, 'object');
-        config.should.be.have.property('provider');
-        config.should.be.have.property('service_url');
-        config.should.be.have.property('articleCountry');
-        config.should.be.have.property('lang');
-    });
-
-    it('should be assigned correctly', function () {
+    before(() =>  {
         client = new TecDocClient({
             'provider': 111,
             'articleCountry': 'UKR',
             'lang': 'UA',
         });
+    });
 
-        let config = client.getConfig();
+    it('should return version info', (done) => {
 
-        config.should.be.have.value('provider', 111);
-        config.should.be.have.value('service_url', 'http://webservicepilot.tecdoc.net/pegasus-3-0/services/TecdocToCatDLB.jsonEndpoint');
-        config.should.be.have.value('articleCountry', 'UKR');
-        config.should.be.have.value('lang', 'UA');
+        client.getPegasusVersionInfo().then( (value) => {
+
+            value.should.be.have.value('status', 200);
+            value.should.be.have.property('build');
+            value.should.be.have.property('date');
+            value.should.be.have.property('major');
+            value.should.be.have.property('minor');
+            value.should.be.have.property('revision');
+            value.should.be.have.property('status');
+            done();
+        },  (_) => {
+        });
+    });
+
+    it('should return db version info', (done) => {
+
+        client.getPegasusDbVersionInfo().then( (value) => {
+
+            value.should.be.have.value('status', 200);
+            value.should.be.have.property('build');
+            value.should.be.have.property('dataVersion');
+            value.should.be.have.property('date');
+            value.should.be.have.property('major');
+            value.should.be.have.property('minor');
+            value.should.be.have.property('refDataVersion');
+            value.should.be.have.property('revision');
+            value.should.be.have.property('status');
+            done();
+        },  (_) => {
+        });
+    });
+
+    it.skip('should return tecDoc languages', function() {
+        // client.getLanguages()
+    });
+
+    it.skip('should return tecDoc countries', function() {
+        // client.getCountries()
+    });
+    it.skip('should return tecDoc country groups', function() {
+        // client.getCountryGroups()
+    });
+    it.skip('should return tecDoc manufacturers', function() {
+        // client.getManufacturers()
+    });
+    it.skip('should return tecDoc models', function() {
+        // client.getModelSeries()
     });
 
 });
