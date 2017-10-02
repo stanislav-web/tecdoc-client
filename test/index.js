@@ -20,36 +20,36 @@ describe('TecDoc Client test', () => {
 
     it('should return version info', (done) => {
 
-        client.getPegasusVersionInfo().then( (value) => {
-
-            value.should.be.have.value('status', 200);
-            value.should.be.have.property('build');
-            value.should.be.have.property('date');
-            value.should.be.have.property('major');
-            value.should.be.have.property('minor');
-            value.should.be.have.property('revision');
-            value.should.be.have.property('status');
+        client.getPegasusVersionInfo().then((response) => {
+            response.should.be.have.value('status', 200);
+            response.should.be.have.property('build');
+            response.should.be.have.property('date');
+            response.should.be.have.property('major');
+            response.should.be.have.property('minor');
+            response.should.be.have.property('revision');
+            response.should.be.have.property('status');
             done();
-        },  (_) => {
-        });
+        }).catch((error) => {
+            console.error(error.assertion.params.previous._message);
+        })
     });
 
     it('should return db version info', (done) => {
 
-        client.getPegasusDbVersionInfo().then( (value) => {
-
-            value.should.be.have.value('status', 200);
-            value.should.be.have.property('build');
-            value.should.be.have.property('dataVersion');
-            value.should.be.have.property('date');
-            value.should.be.have.property('major');
-            value.should.be.have.property('minor');
-            value.should.be.have.property('refDataVersion');
-            value.should.be.have.property('revision');
-            value.should.be.have.property('status');
+        client.getPegasusDbVersionInfo().then((response) => {
+            response.should.be.have.value('status', 200);
+            response.should.be.have.property('build');
+            response.should.be.have.property('dataVersion');
+            response.should.be.have.property('date');
+            response.should.be.have.property('major');
+            response.should.be.have.property('minor');
+            response.should.be.have.property('refDataVersion');
+            response.should.be.have.property('revision');
+            response.should.be.have.property('status');
             done();
-        },  (_) => {
-        });
+        }).catch((error) => {
+            console.error(error.assertion.params.previous._message);
+        })
     });
 
     it.skip('should return tecDoc languages', function() {
