@@ -1,0 +1,5 @@
+mochawesome-report/
+node_modules/
+.nyc_output/
+.travis.yml
+.gitignore

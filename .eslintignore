@@ -1,3 +1,4 @@
 test/
 mochawesome-report/
 lib/config.json
+.nyc_output/
