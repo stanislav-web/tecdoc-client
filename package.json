@@ -1,6 +1,6 @@
 {
   "name": "tecdoc-client",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Nodejs TecDoc client",
   "keywords": [
     "Node TecDoc",
@@ -27,6 +27,8 @@
   },
   "scripts": {
     "dev": "set NODE_ENV=dev node index.js",
+    "pretest": "eslint --fix index.js lib/** ./test",
+    "posttest" : "documentation build lib/** -f md > DOCUMENTATION.md",
     "test": "mocha --timeout 15000 -r should --reporter mochawesome ./test",
     "prepublish": "mocha --timeout 5000 -r should ./test"
   },
@@ -40,6 +42,7 @@
     "linux"
   ],
   "dependencies": {
+    "es6-class-mixin": "^1.0.5",
     "request": "^2.83.0"
   },
   "devDependencies": {
@@ -48,6 +51,7 @@
     "eslint-plugin-async-await": "0.0.0",
     "mocha": "^3.5.3",
     "mochawesome": "^2.3.1",
+    "nyc": "^11.2.1",
     "should": "^13.1.0"
   }
 }

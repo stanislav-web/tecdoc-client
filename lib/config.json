@@ -3,7 +3,7 @@
   "method"   : "POST",
   "provider" : "3423423",
   "articleCountry" : "DE",
-  "lang" : "en",
-  "content-type" : "application/json;charset=UTF-8"
+  "lang" : "EN",
+  "content_type" : "application/json;charset=UTF-8"
 }
 
