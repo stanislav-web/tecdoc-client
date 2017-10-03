@@ -15,22 +15,21 @@
     "email": "stanisov@gmail.com",
     "url": "https://github.com/stanislav-web"
   },
-  "homepage": "https://github.com/stanislav-web/node-tecdoc-client",
+  "homepage": "https://github.com/stanislav-web/tecdoc-client",
   "bugs": {
-    "url": "https://github.com/stanislav-web/node-tecdoc-client/issues",
+    "url": "https://github.com/stanislav-web/tecdoc-client/issues",
     "email": "stanisov@gmail.com"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stanislav-web/node-tecdoc-client.git"
+    "url": "https://github.com/stanislav-web/tecdoc-client.git"
   },
   "scripts": {
     "dev": "set NODE_ENV=dev node index.js",
     "pretest": "eslint --fix index.js lib/** ./test",
-    "posttest" : "documentation build lib/** -f md > DOCUMENTATION.md",
     "test": "mocha --timeout 15000 -r should --reporter mochawesome ./test",
-    "prepublish": "mocha --timeout 5000 -r should ./test"
+    "prepublishOnly": "mocha --timeout 5000 -r should ./test"
   },
   "main": "index.js",
   "engines": {
