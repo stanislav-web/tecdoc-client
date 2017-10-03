@@ -7,6 +7,6 @@ Information about the brands of spare parts and the millionth base of substitute
 
 [![NPM](https://nodei.co/npm/tecdoc-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/tecdoc/)
 
-**:warning: Development of the module is not finished at the moment and is at the earliest stage.*
+*:warning: Development of the module is not finished at the moment and is at the earliest stage.*
 
 ``` npm install tecdoc-client```
