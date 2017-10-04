@@ -11,7 +11,7 @@ before_install:
 before_script:
   - "npm install"
 script:
-- npm coverage
+- npm run coverage
 deploy:
   provider: npm
   email: stanisov@gmail.com
