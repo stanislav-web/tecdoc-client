@@ -7,4 +7,5 @@ mochawesome-report/
 # User-specific stuff:
 .idea/
 /.nyc_output/
-/.env
+/coverage
+
