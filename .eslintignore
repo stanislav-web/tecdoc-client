@@ -2,3 +2,4 @@ test/
 mochawesome-report/
 lib/config.json
 .nyc_output/
+/coverage/lcov-report/

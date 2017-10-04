@@ -1,6 +1,6 @@
 {
   "name": "tecdoc-client",
-  "version": "0.0.15",
+  "version": "0.1.15",
   "description": "Nodejs TecDoc client",
   "keywords": [
     "Node TecDoc",
@@ -42,11 +42,11 @@
     "linux"
   ],
   "dependencies": {
-    "es6-class-mixin": "^1.0.5",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "chai": "^4.1.2"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
     "eslint": "^4.8.0",
     "eslint-plugin-async-await": "0.0.0",
     "mocha": "^3.5.3",

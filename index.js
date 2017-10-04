@@ -4,4 +4,5 @@ if ( require.main === module && process.env.NODE_ENV !== 'dev') {
 }
 
 const Client = require('./lib/client');
+
 module.exports =  Client;
