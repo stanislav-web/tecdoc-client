@@ -28,3 +28,5 @@ Information about the brands of spare parts and the millionth base of substitute
     ✓ should return correct getCountryGroups() (103ms)
 
 ```
+
+[![Gitter](https://badges.gitter.im/TecDocInside/Lobby.svg)](https://gitter.im/TecDocInside/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
