@@ -8,6 +8,7 @@ cache:
 before_install:
   - "npm install -g npm"
   - "npm install -g mocha"
+  - "npm install -g should"
 before_script:
   - "npm install"
 script:
