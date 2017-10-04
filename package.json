@@ -29,6 +29,7 @@
     "dev": "set NODE_ENV=dev node index.js",
     "pretest": "eslint --fix index.js lib/** ./test",
     "test": "mocha --timeout 15000 -r should --reporter mochawesome ./test",
+    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
     "prepublishOnly": "mocha --timeout 5000 -r should ./test"
   },
   "main": "index.js",
