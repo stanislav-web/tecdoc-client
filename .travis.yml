@@ -25,9 +25,9 @@ deploy:
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/a64bc23bc46df729f73e
-    on_success: change # default: always
+      - https://webhooks.gitter.im/e/894c32a2817c8c0324c3
+    on_success: always # default: always
     on_failure: always # default: always
-    on_start: change   # default: never
-    on_cancel: always # default: always
+    on_start: never   # default: never
+    on_cancel: never # default: always
     on_error: always # default: always
