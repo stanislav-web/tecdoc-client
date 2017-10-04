@@ -10,3 +10,21 @@ Information about the brands of spare parts and the millionth base of substitute
 *:warning: Development of the module is not finished at the moment and is at the earliest stage.*
 
 ``` npm install tecdoc-client```
+
+#### Availabilities
+
+```javascript
+
+  TecDoc Client Car functions() test
+    ✓ should return correct getManufacturers() (139ms)
+    ✓ should return correct getModelSeries() (110ms)
+    ✓ should return correct getMarkById() (107ms)
+
+  TecDoc Client Meta functions() test
+    ✓ should return correct getPegasusVersionInfo() (100ms)
+    ✓ should return correct getPegasusDbVersionInfo() (109ms)
+    ✓ should return correct getLanguages() (102ms)
+    ✓ should return correct getCountries() (100ms)
+    ✓ should return correct getCountryGroups() (103ms)
+
+```
