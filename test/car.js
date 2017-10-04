@@ -49,4 +49,19 @@ describe('TecDoc Client Car functions() test', () => {
         });
     });
 
+    it('should return correct getMarkById()', (done) => {
+        client.getMarkById({
+            country: 'DE',
+            markId: 4,
+            linked: true,
+        }).then((response) => {
+            response.should.be.have.value('status', 401);
+            response.should.be.have.property('statusText');
+            response.should.be.have.value('status', 401);
+            response.should.be.have.value('statusText', 'Access not allowed');
+            done();
+        });
+    });
+
+
 });
