@@ -77,4 +77,14 @@ describe('TecDoc Client Meta functions() test', () => {
             done();
         });
     });
+
+    it('should return correct getKeyValues()', (done) => {
+        client.getKeyValues({keyTableId : 1}).then((response) => {
+            response.should.be.have.value('status', 401);
+            response.should.be.have.property('statusText');
+            response.should.be.have.value('status', 401);
+            response.should.be.have.value('statusText', 'Access not allowed');
+            done();
+        });
+    });
 });

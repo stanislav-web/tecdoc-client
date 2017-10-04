@@ -26,6 +26,7 @@ Information about the brands of spare parts and the millionth base of substitute
     ✓ should return correct getLanguages() (102ms)
     ✓ should return correct getCountries() (100ms)
     ✓ should return correct getCountryGroups() (103ms)
+    ✓ should return correct getKeyValues() (106ms)
 
 ```
 
