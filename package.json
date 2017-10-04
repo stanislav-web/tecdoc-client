@@ -29,7 +29,7 @@
     "dev": "set NODE_ENV=dev node index.js",
     "pretest": "eslint --fix index.js lib/** ./test",
     "test": "mocha --timeout 15000 -r should --reporter mochawesome ./test",
-    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm test",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/* -r should --timeout 15000",
     "prepublishOnly": "mocha --timeout 5000 -r should ./test"
   },
   "main": "index.js",
@@ -49,11 +49,10 @@
     "coveralls": "^3.0.0",
     "eslint": "^4.8.0",
     "eslint-plugin-async-await": "0.0.0",
+    "istanbul": "^0.4.5",
     "jscoverage": "^0.6.0",
     "mocha": "^3.5.3",
-    "mocha-lcov-reporter": "^1.3.0",
     "mochawesome": "^2.3.1",
-    "nyc": "^11.2.1",
     "should": "^13.1.0"
   }
 }

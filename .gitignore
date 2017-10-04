@@ -6,6 +6,4 @@ node_modules/
 mochawesome-report/
 # User-specific stuff:
 .idea/
-/.nyc_output/
 /coverage
-
