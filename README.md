@@ -1,5 +1,7 @@
 TecDoc Client for NodeJs
 ------------------------
+
+[![Join the chat at https://gitter.im/TecDocInside/Lobby](https://badges.gitter.im/TecDocInside/Lobby.svg)](https://gitter.im/TecDocInside/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 TecDoc is a structured electronic catalog for the selection of spare parts for cars.
 Information about the brands of spare parts and the millionth base of substitutes makes TecDoc indispensable for the sales of auto parts and service stations.
 
